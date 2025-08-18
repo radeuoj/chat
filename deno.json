@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "server:start": "deno run -A --watch ./server/main.ts",
+    "dev": "deno run -A npm:vite & deno run server:start",
+    "server": "deno run build && deno run server:start"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.6"
+  }
+}
